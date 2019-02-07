@@ -1,16 +1,24 @@
 <template>
-  <div>
-    <span>COMPONENTE EXPLICANDO BIN / PROPS</span>
+  <my-slot>
+    <!--<span>COMPONENTE EXPLICANDO BIN / PROPS</span>-->
+    <span slot="header"> <!-- Pode Usar template-->
+      COMPONENTE EXPLICANDO BIN / PROPS
+    </span>
     <div>Prop String: {{ minhaPropString }}</div>
     <div>Prop Number: {{ minhaPropNumber }}</div>
     <div>Prop Generic: {{ minhaPropGeneric }}</div>
     <div>Prop Default: {{ minhaPropDefault }}</div>
     <div>Prop Validated: {{ minhaPropValidated }}</div>
-  </div>
+  </my-slot>
 </template>
 
 <script>
+import MySlot from '@/components/my-slot.vue';
+
 export default {
+  components: {
+    MySlot,
+  },
   props: {
     minhaPropString: String,
     minhaPropNumber: Number,

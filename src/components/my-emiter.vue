@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style scoped>
- div {
+ div, a {
    margin: 8px;
    padding: 8px;
    display: block;
