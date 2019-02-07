@@ -3,7 +3,6 @@
     <span>COMPONENTE EXPLICANDO EMISSÃO DE EVENTO</span>
     <a href="#" @click.prevent="onSimple">Emitir valor Simples</a>
     <a href="#" @click.prevent="onComplex">Emitir valor Complexo</a>
-    <div>{{ externalValue || 'Clique no link para emitir o evento'}}</div>
   </div>
 </template>
 

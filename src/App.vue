@@ -7,7 +7,9 @@
         :minha-prop-validated="5"
         />
         <my-event />
-        <my-emiter />
+        <my-emiter
+          @simple-event="onSImpleEvent"
+          @complex-event="onComplexEvent"/>
   </div>
 </template>
 
@@ -22,6 +24,14 @@ export default {
     MyBind,
     MyEvent,
     MyEmiter,
+  },
+  methods: {
+    onSimple($event) {
+      console.log('SIMPLE EVENT', $event);
+    },
+    onComplex($event) {
+      console.log('COMPLEX EVENT', $event);
+    },
   },
 };
 </script>
