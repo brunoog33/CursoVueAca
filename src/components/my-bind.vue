@@ -21,7 +21,8 @@ export default {
     },
     minhaPropValidated: {
       type: Number,
-      validator: v => v > 10,
+      validator: v => v > 10, /* Apresenta log no console pq o componente só aceita
+                                 valor maior que 10 */
     },
   },
 };
