@@ -13,6 +13,9 @@
         :external-prop="propSync"
         @evento-qualquer="propSync = $event"
         :sync-prop.sync="propSync" />
+    <my-condictional />
+    <my-hide />
+    <my-loop />
   </div>
 </template>
 
@@ -21,6 +24,9 @@ import MyBind from '@/components/my-bind.vue';
 import MyEvent from '@/components/my-event.vue';
 import MyEmiter from '@/components/my-emiter.vue';
 import MyPropSync from '@/components/my-prop-sync.vue';
+import MyCondictional from '@/components/my-condictional.vue';
+import MyHide from '@/components/my-hide.vue';
+import MyLoop from '@/components/my-loop.vue';
 
 export default {
   name: 'app',
@@ -29,6 +35,9 @@ export default {
     MyEvent,
     MyEmiter,
     MyPropSync,
+    MyCondictional,
+    MyHide,
+    MyLoop,
   },
   data() {
     return {

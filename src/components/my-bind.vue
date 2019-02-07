@@ -1,7 +1,8 @@
 <template>
   <my-slot>
     <!--<span>COMPONENTE EXPLICANDO BIN / PROPS</span>-->
-    <span slot="header"> <!-- Pode Usar template-->
+    <span slot="header"> <!-- Pode Usar template ignora o filho
+                          Span vai gerar um filho no slot header-->
       COMPONENTE EXPLICANDO BIN / PROPS
     </span>
     <div>Prop String: {{ minhaPropString }}</div>
