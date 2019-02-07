@@ -7,7 +7,9 @@
        Evento Clique com stopPropagation e preventDefault
     </a>-->
     <a href="" @click="onClick">Evento Clique</a>
-    <a href="" @click.stop="onClick">Evento Clique com stopPropagation</a>
+    <a href="" @click.stop="onClick">
+      Evento Clique com <span @click.stop style="color: red">stopPropagation</span>
+    </a>
     <a href="" @click.stop.prevent="onClick">Evento Clique com stopPropagation e preventDefault</a>
     <div>{{ eventResult || 'Clique em um dos links' }}</div>
   </div>
