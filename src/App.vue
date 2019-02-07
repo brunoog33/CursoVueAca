@@ -18,6 +18,7 @@
     <my-loop />
     <!--<my-ciclo-de-vida />-->
     <my-ref />
+    <my-computed />
   </div>
 </template>
 
@@ -31,6 +32,7 @@ import MyHide from '@/components/my-hide.vue';
 import MyLoop from '@/components/my-loop.vue';
 // import MyCicloDeVida from '@/components/my-ciclo-de-vida.vue';
 import MyRef from '@/components/my-ref.vue';
+import MyComputed from '@/components/my-computed.vue';
 
 export default {
   name: 'app',
@@ -44,6 +46,7 @@ export default {
     MyLoop,
     // MyCicloDeVida,
     MyRef,
+    MyComputed,
   },
   data() {
     return {
