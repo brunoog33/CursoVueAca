@@ -1,15 +1,20 @@
 <template>
   <div>
-    <span>COMPONENTE EXPLICANDO EMISSÃO DE EVENTO</span>
+    <my-slot>
+    <span slot="header">COMPONENTE EXPLICANDO EMISSÃO DE EVENTO</span>
     <a href="#" @click.prevent="onSimple">Emitir valor Simples</a>
     <a href="#" @click.prevent="onComplex">Emitir valor Complexo</a>
+    </my-slot>
   </div>
 </template>
 
 <script>
+import MySlot from '@/components/my-slot.vue';
+
 export default {
   props: {
     externalValue: String,
+    MySlot,
   },
   methods: {
     onSimple() {
