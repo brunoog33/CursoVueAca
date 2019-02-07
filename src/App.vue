@@ -7,18 +7,21 @@
         :minha-prop-validated="5"
         />
         <my-event />
+        <my-emiter />
   </div>
 </template>
 
 <script>
 import MyBind from '@/components/my-bind.vue';
 import MyEvent from '@/components/my-event.vue';
+import MyEmiter from '@/components/my-emiter.vue';
 
 export default {
   name: 'app',
   components: {
     MyBind,
     MyEvent,
+    MyEmiter,
   },
 };
 </script>
