@@ -26,6 +26,7 @@ export default {
  div {
    margin: 8px;
    padding: 8px;
+   display: block;
    border-radius: 4px;
    border: 1px solid rgba(0, 0, 0, 0.6)
  };
