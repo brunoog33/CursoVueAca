@@ -16,6 +16,8 @@
     <my-condictional />
     <my-hide />
     <my-loop />
+    <!--<my-ciclo-de-vida />-->
+    <my-ref />
   </div>
 </template>
 
@@ -27,6 +29,8 @@ import MyPropSync from '@/components/my-prop-sync.vue';
 import MyCondictional from '@/components/my-condictional.vue';
 import MyHide from '@/components/my-hide.vue';
 import MyLoop from '@/components/my-loop.vue';
+// import MyCicloDeVida from '@/components/my-ciclo-de-vida.vue';
+import MyRef from '@/components/my-ref.vue';
 
 export default {
   name: 'app',
@@ -38,6 +42,8 @@ export default {
     MyCondictional,
     MyHide,
     MyLoop,
+    // MyCicloDeVida,
+    MyRef,
   },
   data() {
     return {

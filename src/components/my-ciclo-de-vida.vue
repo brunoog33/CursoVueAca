@@ -19,6 +19,31 @@ export default {
       list: [],
     };
   },
+  beforeCreate() {
+    // Ainda não existe os data
+    console.log('beforeCreate', this.list);
+  },
+  created() {
+    console.log('created');
+  },
+  beforeMount() {
+    console.log('beforeMount');
+  },
+  mounted() {
+    console.log('mounted');
+  },
+  beforeUpdate() {
+    console.log('beforeUpdate', this.list);
+  },
+  updated() {
+    console.log('updated', this.list);
+  },
+  beforeDestroy() {
+    console.log('beforeDestroy');
+  },
+  destroyed() {
+    console.log('destroyed');
+  },
 };
 </script>
 
