@@ -19,6 +19,10 @@
     <!--<my-ciclo-de-vida />-->
     <my-ref />
     <my-computed />
+    <my-scope-slot :list="['Fernando', 'Bruno', 'Claudio', 'Maciel']">
+      <template slot-scope="{ item }">{{ item }}</template>
+    </my-scope-slot>
+    <my-watch/>
   </div>
 </template>
 
@@ -33,6 +37,9 @@ import MyLoop from '@/components/my-loop.vue';
 // import MyCicloDeVida from '@/components/my-ciclo-de-vida.vue';
 import MyRef from '@/components/my-ref.vue';
 import MyComputed from '@/components/my-computed.vue';
+import MyScopeSlot from '@/components/my-scope-slot.vue';
+import MyWatch from '@/components/my-watch.vue';
+
 
 export default {
   name: 'app',
@@ -47,6 +54,8 @@ export default {
     // MyCicloDeVida,
     MyRef,
     MyComputed,
+    MyScopeSlot,
+    MyWatch,
   },
   data() {
     return {
