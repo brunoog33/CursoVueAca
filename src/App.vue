@@ -23,6 +23,8 @@
       <template slot-scope="{ item }">{{ item }}</template>
     </my-scope-slot>
     <my-watch/>
+    <my-directive/>
+    <my-filter />
   </div>
 </template>
 
@@ -39,7 +41,8 @@ import MyRef from '@/components/my-ref.vue';
 import MyComputed from '@/components/my-computed.vue';
 import MyScopeSlot from '@/components/my-scope-slot.vue';
 import MyWatch from '@/components/my-watch.vue';
-
+import MyDirective from '@/components/my-directive.vue';
+import MyFilter from '@/components/my-filter.vue';
 
 export default {
   name: 'app',
@@ -56,6 +59,8 @@ export default {
     MyComputed,
     MyScopeSlot,
     MyWatch,
+    MyDirective,
+    MyFilter,
   },
   data() {
     return {
